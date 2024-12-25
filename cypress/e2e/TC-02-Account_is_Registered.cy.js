@@ -5,7 +5,7 @@ describe('Account Registration', () => {
     })
     cy.viewport(1920, 1080)
   })
-  it('Referral validation', () => {
+  it('registered Account', () => {
     cy.visit('https://recruitment-staging-queenbee.paradev.io/register')
     cy.get('#chakra-modal--header-1').find('svg').click()
     cy.get(':nth-child(2) > .chakra-radio__control').click()
